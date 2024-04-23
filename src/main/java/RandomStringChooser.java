@@ -12,15 +12,13 @@ public class RandomStringChooser
      valuesRemaining = values.length;
      }
     public String getNext() {
-        if (valuesRemaining ==0) 
+        if (valuesRemaining ==0) {
             return "NONE";
-        
+        }else{
           int index = (int)(Math.random()* valuesRemaining);
           String selected = values[index];
           values[index] = values[valuesRemaining-1];
-
-         valuesRemaining--;
-         
-            return selected;
+          valuesRemaining--;     
+          return selected;
         }
 }
