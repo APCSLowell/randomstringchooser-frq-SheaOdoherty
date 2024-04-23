@@ -8,7 +8,7 @@ public class RandomStringChooser
         values = new String[vals.length];
         for(int i = 0; i< values.length; i++){
         values[i] = vals[i];
-         
+        }
      valuesRemaining = values.length;
      }
     public String getNext() {
